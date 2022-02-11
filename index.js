@@ -2,7 +2,6 @@ function sort(temperaturas){
 
     var count, copy
     var trade = 0
-    var limit = 4
 
     console.log("==========================")
     console.log("  Not Organized Sequency")
@@ -11,7 +10,7 @@ function sort(temperaturas){
 
     do {
         trade = 0
-        for(count = 0; count < limit; count++){
+        for(count = 0; count < temperaturas.length; count++){
             if(temperaturas[count] > temperaturas[count+1]){
                 copy = temperaturas[count]
                 temperaturas[count] = temperaturas[count+1]
